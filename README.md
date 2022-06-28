@@ -14,4 +14,8 @@ https://singlevoid.com/twitter
 
 <img width="596" alt="image" src="https://user-images.githubusercontent.com/55023488/176241496-12e66028-8f15-49e4-a999-fdf0dc7a1cce.png">
 
+<img width="593" alt="image" src="https://user-images.githubusercontent.com/55023488/176241576-ce5a4d46-77a0-4392-a4ef-8189f9561c88.png">
+
+<img width="1534" alt="image" src="https://user-images.githubusercontent.com/55023488/176241632-5bf68836-35db-4729-9348-4b0f848311dc.png">
+
 <img width="991" alt="image" src="https://user-images.githubusercontent.com/55023488/176240709-f5b6603d-f1eb-4cc1-b525-4d8ea3e41031.png">

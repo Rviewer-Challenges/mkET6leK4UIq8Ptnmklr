@@ -1,0 +1,97 @@
+
+
+<div class="tweet" *ngIf="tweet && LOADED" >
+
+
+  <div class="tweet-content" *ngIf="tweet && retweet && tweet.type == 'response' && retweet.text && !status" (click)="tweetClicked($event)">
+
+
+    <app-tweet-header class="retweet-header" [tweet]="retweet" [inner]="true" ></app-tweet-header>
+    <div class="thread-indicator"></div>
+
+
+    <div class="tweet-body" >
+      <app-tweet-username [tweet]="retweet" ></app-tweet-username>
+      <app-tweet-text class="retweet-text" [text]="retweet.text" ></app-tweet-text>
+
+      <app-tweet-image-container *ngIf="!tweet.text" [tweet]="retweet"></app-tweet-image-container>
+
+      <div class="retweted-tweet" *ngIf="retweet && retweet.type == 'retweet' && tweet.text && inner_original_tweet">
+
+        <div class="retweet-header">
+          <img class="tweet-avatar retweeted"  [src]="inner_original_tweet.avatar">
+          <app-tweet-username [tweet]="inner_original_tweet" ></app-tweet-username>
+        </div>
+        <app-tweet-text  class="tweet-text retweet-text" *ngIf="retweet && tweet.text" [text]="inner_original_tweet.text" ></app-tweet-text>
+
+
+        <app-tweet-image-container [tweet]="inner_original_tweet"></app-tweet-image-container>
+
+
+
+      </div>
+
+      <app-tweet-actions [tweet]="retweet" [ngClass]="{'response-actions': retweet && tweet.type == 'response'}"></app-tweet-actions>
+    </div>
+
+
+  </div>
+
+  <div class="tweet-content" *ngIf="tweet && retweet &&tweet.type == 'response' && !retweet.text && inner_original_tweet " (click)="tweetClicked($event)">
+
+
+    <app-tweet-header [tweet]="inner_original_tweet" [inner]="true"></app-tweet-header>
+    <div class="thread-indicator"></div>
+
+
+    <div class="tweet-body" >
+      <app-tweet-username [tweet]="inner_original_tweet" ></app-tweet-username>
+      <app-tweet-text [text]="inner_original_tweet.text" ></app-tweet-text>
+      <app-tweet-actions [tweet]="inner_original_tweet" [ngClass]="{'response-actions': retweet && tweet.type == 'response'}"></app-tweet-actions>
+    </div>
+
+  </div>
+
+  <app-tweet-decorator [tweet]="tweet" [original_tweet]="retweet" [ngClass]="{'response-show': retweet && tweet.type == 'response'}"></app-tweet-decorator>
+
+
+  <div class="tweet-content" (click)="tweetClicked($event)">
+
+    <app-tweet-header class="header" [tweet]="tweet" [original_tweet]="retweet" ></app-tweet-header>
+
+    <div class="tweet-body" >
+
+
+      <app-tweet-username [tweet]="tweet" [original_tweet]="retweet" ></app-tweet-username>
+
+      <app-tweet-text *ngIf="!retweet" [text]="tweet.text" ></app-tweet-text>
+      <app-tweet-text *ngIf="retweet && !tweet.text" [text]="retweet.text" ></app-tweet-text>
+      <app-tweet-text *ngIf="retweet && tweet.text" [text]="tweet.text" ></app-tweet-text>
+
+      <app-tweet-image-container [tweet]="tweet"></app-tweet-image-container>
+      <app-tweet-image-container *ngIf="retweet && tweet.type == 'retweet' && !tweet.text" [tweet]="retweet"></app-tweet-image-container>
+
+      <div class="retweted-tweet" *ngIf="retweet && tweet.type == 'retweet' && tweet.text">
+
+        <div class="retweet-header">
+          <img class="tweet-avatar retweeted"  [src]="retweet?.avatar">
+          <app-tweet-username [tweet]="retweet" ></app-tweet-username>
+        </div>
+        <app-tweet-text  class="tweet-text" *ngIf="retweet && tweet.text" [text]="retweet.text" ></app-tweet-text>
+
+
+        <app-tweet-image-container [tweet]="retweet"></app-tweet-image-container>
+
+
+      </div>
+      <app-tweet-actions [tweet]="tweet" [original_tweet]="retweet"></app-tweet-actions>
+    </div>
+
+
+  </div>
+
+
+
+</div>
+
+

@@ -1,0 +1,46 @@
+.verified{
+  margin-top: 0em;
+  svg{
+    width: 1.3em;
+    height: 1.3em;
+    color: rgb(255, 255, 255);
+    fill: currentcolor;
+    transition: all 0.2s ease-in-out;
+    margin-left: 0.3em;
+  }
+}
+
+.username{
+  display: flex;
+  flex-direction: row;
+  padding-top: 1em;
+}
+
+.user-name{
+  color: gray;
+  margin-left: 0.3em;
+  font-size: 15px;
+
+}
+
+a{
+  margin-top: 0em;
+}
+.timestamp{
+  color: gray;
+  margin-left: 0.3em;
+  font-size: 11pt;
+  margin-top: 0.15em;
+}
+
+.user-nick{
+  font-weight: 600;
+  margin-top: -0.15em;
+  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 13pt;
+}
+
+.user-nick:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}

@@ -1,0 +1,38 @@
+.hashtag{
+  color: rgb(0, 153, 255);
+  cursor: pointer;
+}
+
+.hashtag:hover{
+  text-decoration: underline;
+}
+
+.tweet-text{
+  margin: 0;
+  margin-top: 0.3em;
+  padding-right: 3em;
+
+  margin-right: 3em;
+  font-size: 15px;
+  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.user-link{
+  text-decoration: none;
+  color: rgb(0, 153, 255);
+  cursor: pointer;
+}
+.user-link:hover{
+  text-decoration: underline;
+}
+
+
+.link{
+  text-decoration: none;
+  color: rgb(0, 153, 255);
+  cursor: pointer;
+}
+
+.link:hover{
+  text-decoration: underline;
+}

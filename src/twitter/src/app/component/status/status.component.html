@@ -1,0 +1,24 @@
+<app-main>
+
+
+  <div class="top-bar">
+    <div class="top-bar-user">
+      <p>Tweet</p>
+    </div>
+
+  </div>
+
+
+  <div class="status">
+
+    <div class="tweet-container">
+      <app-tweet *ngIf="tweet" [tweet]="tweet"></app-tweet>
+      <app-make-tweet *ngIf="tweet" [response]="tweet"></app-make-tweet>
+    </div>
+
+    <div class="responses">
+      <app-timeline [status]="true" *ngIf="tweets.timeline.length > 0"> </app-timeline>
+    </div>
+
+  </div>
+</app-main>

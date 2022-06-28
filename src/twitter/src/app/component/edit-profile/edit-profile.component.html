@@ -1,0 +1,43 @@
+<div class="edit-profile" (click)="click($event)">
+
+
+
+
+  <div class="edit-profile-container">
+
+    <svg class="close-btn" viewBox="0 0 24 24">
+      <g><path d="M13.414 12l5.793-5.793c.39-.39.39-1.023 0-1.414s-1.023-.39-1.414 0L12 10.586 6.207 4.793c-.39-.39-1.023-.39-1.414 0s-.39 1.023 0 1.414L10.586 12l-5.793 5.793c-.39.39-.39 1.023 0 1.414.195.195.45.293.707.293s.512-.098.707-.293L12 13.414l5.793 5.793c.195.195.45.293.707.293s.512-.098.707-.293c.39-.39.39-1.023 0-1.414L13.414 12z"></path></g>
+    </svg>
+
+    <form [formGroup]="form">
+      <h1>Editar Perfil</h1>
+
+      <div class="input">
+        <label class="input-label" for="username" id="username-label" [ngClass]="{'filled': form.controls['username'].value != ''}">Nick</label>
+        <input type="text" id="username" formControlName="username">
+      </div>
+
+      <div class="input">
+        <label class="input-label" for="avatar" id="username-label" [ngClass]="{'filled': form.controls['avatar'].value != ''}">Avatar</label>
+        <input type="text" id="avatar" formControlName="avatar">
+      </div>
+
+      <div class="input">
+        <label class="input-label" for="background" id="username-label" [ngClass]="{'filled': form.controls['background'].value != ''}">Background</label>
+        <input type="text" id="background" formControlName="background">
+      </div>
+
+
+      <div class="input">
+        <label class="input-label" for="bio" id="username-label" [ngClass]="{'filled': form.controls['bio'].value != ''}">Biografia</label>
+        <textarea type="text" id="bio" formControlName="bio"></textarea>
+      </div>
+
+      <button class="white-button" (click)="submit()">Guardar</button>
+
+    </form>
+
+
+  </div>
+
+</div>

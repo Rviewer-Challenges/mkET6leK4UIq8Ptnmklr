@@ -1,0 +1,9 @@
+<div class="hashtags">
+
+  <h2>Qué está pasando</h2>
+
+  <div class="trending" *ngFor="let hashtag of tweets.trending" [routerLink]="['/search', hashtag.NAME.substring(1)]">
+    <p>Tendencia en España</p>
+    <p class="hash">{{hashtag.NAME}}</p>
+    <p> {{hashtag.count}} Tweets</p>
+</div>

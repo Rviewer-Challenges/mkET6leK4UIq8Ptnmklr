@@ -1,0 +1,6 @@
+<div class="tweet-header">
+  <img class="tweet-avatar" *ngIf="tweet.type != 'retweet'" [src]="tweet.avatar">
+  <img class="tweet-avatar" *ngIf="tweet.type == 'retweet' && innerReference" [src]="tweet.avatar">
+  <img class="tweet-avatar" *ngIf="original_tweet  && tweet.type == 'retweet' && !tweet.text" [src]="original_tweet.avatar">
+  <img class="tweet-avatar" *ngIf="original_tweet  && tweet.type == 'retweet' && tweet.text" [src]="tweet.avatar">
+</div>

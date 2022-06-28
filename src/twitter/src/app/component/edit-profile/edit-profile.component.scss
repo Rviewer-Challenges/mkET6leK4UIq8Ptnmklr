@@ -1,0 +1,150 @@
+.edit-profile{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(189, 216, 255, 0.251);
+  z-index: 500;
+  overflow: overlay;
+}
+
+
+.edit-profile-container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-radius: 1em;
+  padding-top: 3em;
+  margin-top: 10em;
+  margin-left: -10em;
+}
+
+
+
+input:focus + #username-label{
+  color: red;
+  font-size: 20pt;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  width: 40em;
+  h1{
+    font-size: 20pt;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+  }
+}
+
+
+.close-btn{
+  width: 2em;
+  height: 2em;
+  padding: 0.5em;
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  color: white;
+  fill: currentColor;
+  border-radius: 3em;
+}
+
+.close-btn:hover{
+  background-color: rgba(255, 255, 255, 0.116);
+  cursor: pointer;
+}
+
+
+textarea{
+  background-color: black;
+  font-size: 14pt;
+  border: 1px solid rgb(70, 70, 70);
+  padding: 0.5em;
+  padding-top: 1.2em;
+  border-radius: 0.2em;
+  color: white;
+  width: 30em;
+  resize: none;
+}
+
+textarea:focus{
+  border: 1px solid rgb(29, 155, 240);
+  outline: none;
+}
+
+input[type="text"]{
+  background-color: black;
+  font-size: 14pt;
+  border: 1px solid rgb(70, 70, 70);
+  padding: 0.5em;
+  padding-top: 1.2em;
+  border-radius: 0.2em;
+  color: white;
+  width: 30em;
+}
+
+input[type="password"]{
+  background-color: black;
+  font-size: 18pt;
+  border: 1px solid rgb(70, 70, 70);
+  padding: 0.5em;
+  padding-top: 1.2em;
+  border-radius: 0.2em;
+  color: white;
+  width: 15em;
+}
+
+
+input[type="text"]:focus{
+  border: 1px solid rgb(29, 155, 240);
+  outline: none;
+}
+
+input[type="password"]:focus{
+  border: 1px solid rgb(29, 155, 240);
+  outline: none;
+}
+
+
+.input{
+  position: relative;
+  margin: 0.5em;
+  &:focus-within{
+    label{
+      font-size: 9pt;
+      top: 0.4em;
+      color: rgb(29, 155, 240);
+    }
+  }
+}
+
+.input-label{
+  position: absolute;
+  left: 1em;
+  top: 1.3em;
+  color: rgb(103, 103, 103);
+  font-size: 12pt;
+  transition: all 0.25s ease-in-out;
+}
+
+.filled{
+  font-size: 9pt;
+  top: 0.4em;
+  color: rgb(103, 103, 103);
+}
+
+input:focus + #username-label{
+  color: red;
+  font-size: 20pt;
+}
+

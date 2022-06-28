@@ -1,0 +1,32 @@
+.hashtags{
+  font-size: 14pt;
+  background-color: #202327;
+  width: 20em;
+  border-radius: 1em;
+  margin-top: 1em;
+  overflow: hidden;
+  h2{
+    margin: 0.8em;
+    font-size: 14pt;
+  }
+
+
+  .trending{
+    font-size: 10pt;
+    color: gray;
+    padding: 0.8em;
+    p{
+      margin: 0.4em
+    };
+    .hash{
+      font-size: 12pt;
+      font-weight: 700;
+      color: white;
+    }
+  }
+
+  .trending:hover{
+    background-color: #282b30;
+    cursor: pointer;
+  }
+}

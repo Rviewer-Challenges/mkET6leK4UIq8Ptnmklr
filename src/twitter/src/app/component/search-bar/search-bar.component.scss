@@ -1,0 +1,42 @@
+.search{
+  position: relative;
+  background-color: #202327;
+  font-size: 14pt;
+  border-radius: 2em;
+  border: 1px solid transparent;
+  height: 2.5em;
+  width: 20em;
+  margin-top: 0.5em;
+  transition: all 0s;
+  &:focus-within{
+    background-color: black;
+    border: 1px solid  rgb(0, 187, 255);
+    .search-icon{
+      color: rgb(0, 187, 255);
+      transition: all 0s;
+    }
+  }
+}
+
+input[type="search"]{
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  color: white;
+  width: 20em;
+  height: 3.2em;
+  font-size: 12pt;
+  margin-left: 3em;
+}
+
+
+.search-icon{
+  position: absolute;
+  top: 0.8em;
+  left: 1em;
+  width: 1em;
+  height: 1em;
+  color: rgb(77, 77, 77);
+  fill: currentcolor;
+  transition: all 0s;
+}

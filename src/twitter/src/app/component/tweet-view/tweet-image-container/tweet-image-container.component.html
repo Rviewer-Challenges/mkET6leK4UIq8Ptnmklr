@@ -1,0 +1,33 @@
+
+<div class="image-container">
+  <div class="photo-container one-photo" *ngIf="tweet.photo_1 && !tweet.photo_2">
+    <img class="photo" src="{{tweet.photo_1}}" alt="">
+  </div>
+
+  <div class="photo-container two-photo" *ngIf="tweet.photo_2 && !tweet.photo_3">
+    <img class="photo" src="{{tweet.photo_1}}" alt="">
+    <img class="photo" src="{{tweet.photo_2}}" alt="">
+  </div>
+
+  <div class="photo-container three-photo" *ngIf="tweet.photo_3 && !tweet.photo_4">
+    <img class="photo" src="{{tweet.photo_1}}" alt="">
+    <div class="vertical-separator">
+      <img class="photo" src="{{tweet.photo_2}}" alt="">
+      <img class="photo" src="{{tweet.photo_3}}" alt="">
+    </div>
+  </div>
+
+  <div class="photo-container four-photo" *ngIf="tweet.photo_4">
+    <div class="vertical-separator">
+      <img class="photo" src="{{tweet.photo_1}}" alt="">
+      <img class="photo" src="{{tweet.photo_2}}" alt="">
+    </div>
+
+    <div class="vertical-separator">
+      <img class="photo" src="{{tweet.photo_3}}" alt="">
+      <img class="photo" src="{{tweet.photo_4}}" alt="">
+    </div>
+  </div>
+</div>
+
+

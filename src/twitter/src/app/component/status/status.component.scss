@@ -1,0 +1,23 @@
+.status{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.tweet-container{
+  padding-top: 4em;
+  font-size: 11pt;
+  position: relative;
+  border-left: 1px solid rgb(62, 62, 62);
+  border-right: 1px solid rgb(62, 62, 62);
+  width: 50em;
+  animation: fadeIn 1s;
+}
+
+@media screen and (max-width: 1600px){
+
+ .tweet-container{
+  width: 40em;
+ }
+}

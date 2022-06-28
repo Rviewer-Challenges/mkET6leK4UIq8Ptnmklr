@@ -1,0 +1,19 @@
+
+.side-links{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 10pt;
+  color: rgb(82, 82, 82);
+  margin-top: 1.5em;
+  a{
+    margin: 0.3em;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+}
+
+.main{
+  margin-bottom: 10em;
+}

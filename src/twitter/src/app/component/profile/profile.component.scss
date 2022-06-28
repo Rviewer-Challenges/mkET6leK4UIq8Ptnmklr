@@ -1,0 +1,219 @@
+.profile{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+}
+
+.profile-info{
+  font-size: 11pt;
+  position: relative;
+  border-left: 1px solid rgb(62, 62, 62);
+  border-right: 1px solid rgb(62, 62, 62);
+  width: 50em;
+  animation: fadeIn 1s;
+}
+
+.profile-background{
+  font-size: 11pt;
+  height: 20em;
+  width: 50em;
+  object-fit: cover;
+  background: rgb(31, 30, 30);
+  border: 1px solid black;
+  outline: none;
+}
+
+
+.clickable{
+  cursor: pointer;
+
+}
+
+.clickable:hover{
+  text-decoration: underline;
+}
+
+.edit{
+  background-color: black;
+  color: white;
+  border: 1px solid rgb(86, 86, 86);
+}
+
+.edit:hover{
+  background-color: rgb(6,6,6);
+}
+
+.profile-avatar{
+  position: absolute;
+  width: 9em;
+  height: 9em;
+  left: 1em;
+  top: 15.5em;
+  border-radius: 6em;
+  border: 0.2em solid black;
+  background-color: black;
+}
+
+.top-bar{
+  svg{
+    color: white;
+  }
+}
+
+.fixed-tweet{
+  border-left: 1px solid rgb(62, 62, 62);
+  border-right: 1px solid rgb(62, 62, 62);
+}
+
+.verified{
+  width: 1.6em;
+  margin-top: -0.2em;
+  margin-left: 0.3em;
+  color: white;
+  fill: currentColor;
+}
+
+.profile-data{
+  position: relative;
+  height: 15em;
+  top: 2.5em;
+}
+
+.profile-actions{
+  height: 3em;
+}
+
+.user{
+  margin-left: 1em;
+}
+
+.user-nickname-u{
+  display: flex;
+  flex-direction: row;
+}
+
+h1{
+  font-size: 12pt;
+  margin: 0;
+}
+
+.profile-username{
+  color: gray;
+  margin: 0;
+  margin-top: -0em;
+}
+
+.follow-data{
+  font-size: 11pt;
+  font-weight: 700;
+}
+
+
+.follow-text{
+  color: gray;
+  font-size: 11pt;
+  font-weight: 500;
+}
+
+.timeline-actions{
+  margin-top: 0em;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 3.5em;
+  justify-content: center;
+  .timeline-action{
+    font-size: 12pt;
+    position: relative;
+    text-align: center;
+    padding: 1.3em;
+    padding-top: 1em;
+    color: gray;
+    cursor: pointer;
+    flex-grow: 1;
+  }
+  .timeline-action:hover{
+    background-color: rgb(22, 22, 22);
+  }
+
+  .selected{
+    color: white;
+    font-weight: 600;
+  }
+}
+
+.user-bio-actions{
+  position: absolute;
+  top: -2em;
+  right: 1em;
+}
+
+
+.top-bar-user{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  p{
+    padding: 0;
+    margin: 0.6em;
+    margin-left: 1.2em;
+    font-size: 16pt;
+  }
+  .user-tweets{
+    font-size: 10pt;
+    font-weight: 500;
+    color: rgb(67, 67, 67);
+    margin-left: 2em;
+    margin-top: -1.2em;
+  }
+}
+
+
+
+.indicator{
+  position: absolute;
+  bottom: 0em;
+  height: 0.25em;
+  left: 2em;
+  right: 2em;
+  border-radius: 1em;
+  background-color: rgb(0, 187, 255);
+}
+
+.white-button{
+  font-size: 12pt;
+}
+
+.followed{
+  background-color: black;
+  color: white;
+  border: 1px solid rgb(86, 86, 86);
+}
+
+.followed:before{
+  content: "Siguiendo";
+}
+
+.followed:hover:before{
+  content: "Dejar de Seguir";
+}
+
+.followed:hover{
+  color: rgb(201, 1, 1);
+  border: 1px solid red;
+  background-color: rgba(252, 5, 5, 0.089);
+}
+
+@media screen and (max-width: 1600px){
+
+  .profile-info{
+    width: 40em;
+  }
+
+  .profile-background{
+    width: 40em;
+  }
+
+}
